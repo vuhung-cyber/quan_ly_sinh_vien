@@ -1,0 +1,5 @@
+Vũ Quang Hưng,CN8,caclc,inda,back end,Lê Văn Đô
+Đồng Xuân Phúc,CN1,caclc,Izisolution,mobie,Lê Sỹ Vinh
+Nguyễn Thị Thảo,Cn3,cd1,FPT,Data engineer,Đồng Văn Cảnh
+Trương Trọng Chiến,CN5,k64,Juventus,Fuho,Phùng Thị Ngọc
+Văn Đăng Cường,CN1,cd,Viettel,Web,Nguyễn Thị Hoa

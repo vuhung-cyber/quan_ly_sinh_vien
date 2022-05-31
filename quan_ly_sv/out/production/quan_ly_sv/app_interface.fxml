@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App_control">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="731.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Quán lý sinh viên">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1000.0">
+                     <children>
+                        <TextField layoutX="43.0" layoutY="48.0" promptText="Tìm kiếm sinh viên" />
+                        <TextField fx:id="sv" layoutX="43.0" layoutY="159.0" promptText="Sinh viên" />
+                        <Button fx:id="them" layoutX="37.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttom_add" text="Thêm" />
+                        <Button layoutX="127.0" layoutY="616.0" mnemonicParsing="false" text="Sửa" />
+                        <Button layoutX="214.0" layoutY="616.0" mnemonicParsing="false" onAction="#buttom_delete" text="Xoá" fx:id="xoa" />
+                        <Label layoutX="43.0" layoutY="126.0" text="Tạo sinh viên thực tập">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="khoa" layoutX="43.0" layoutY="211.0" promptText="Khoa" />
+                        <TextField fx:id="lop" layoutX="43.0" layoutY="265.0" promptText="Lớp " />
+                        <TextField fx:id="cong_ty" layoutX="43.0" layoutY="319.0" promptText="Công ty thực tập" />
+                        <TableView fx:id="list_sv" layoutX="306.0" layoutY="47.0" prefHeight="598.0" prefWidth="671.0">
+                          <columns>
+                            <TableColumn fx:id="name" prefWidth="236.0" text="Tên sinh viên" />
+                            <TableColumn fx:id="grade" minWidth="9.0" prefWidth="58.0" text="Khoa" />
+                              <TableColumn fx:id="_class" minWidth="0.0" prefWidth="53.0" text="Lớp" />
+                              <TableColumn fx:id="company" prefWidth="143.0" text="Công ty thực tập" />
+                              <TableColumn fx:id="job" minWidth="0.0" prefWidth="98.0" text="Vị trí" />
+                              <TableColumn fx:id="teacher" minWidth="0.0" prefWidth="91.0" text="Giáo viên phụ trách" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="vi_tri" layoutX="43.0" layoutY="375.0" promptText="Vị trí thực tập" />
+                        <TextField fx:id="gv" layoutX="43.0" layoutY="426.0" promptText="Giáo viên phụ trách" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Danh sách công ty">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="162.0" prefWidth="248.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="logout" layoutX="1013.0" layoutY="13.0" mnemonicParsing="false" onAction="#setLogout" prefHeight="40.0" prefWidth="173.0" text="Đăng xuất khỏi trái đất" />
+   </children>
+</AnchorPane>
